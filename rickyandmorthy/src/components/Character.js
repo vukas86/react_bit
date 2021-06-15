@@ -15,6 +15,3 @@ const Character = ({ data }) => {
 
 export { Character };
 
-/* state prima id  */
-/* onClick = {
-            clikPic(data.id) */
