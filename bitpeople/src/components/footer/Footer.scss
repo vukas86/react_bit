@@ -1,6 +1,10 @@
-.footer{
-    background-color: #ee6e73;
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
+.footer {
+  background-color: #ee6e73;
+  color: white;
+  font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+    Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  line-height: 22.5px;
+  display: flex;
+  justify-content: space-evenly;
 }

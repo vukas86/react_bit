@@ -2,31 +2,42 @@ import React from "react";
 import { useEffect, useState } from 'react';
 import { User } from '../user/User';
 import { getData } from '../../Api'
+import SearchIcon from '@material-ui/icons/Search';
+import './Main.scss';
 
-const Main = () => {
+const Main = (props) => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        getData().then(data => setData(data))
+        getData().then(data => setData(data.results))
     }, [])
 
     return (
-        <div className="main">
-            <div className="search">
-                <img src="icon.svg" alt="icon"></img>
-                <input type="text" placeholder="Search user"></input>
+        <>
+            <div className="main">
+                <div className="search">
+                    <SearchIcon className="searchIcon" />
+                    <input type="text" placeholder="Search user"></input>
+                </div>
             </div>
-            <div className="text right">
+
+            <div className="text_right">
                 <span>Male 8</span>
                 <span>Female:7</span>
             </div>
+
             <ul className="listPeople">
-                <User />
+                {data.map(u => <User user={u} />)}
             </ul>
 
-        </div>
+        </>
+
+
     )
+
+
 }
 console.log(Main)
+
 
 export { Main };

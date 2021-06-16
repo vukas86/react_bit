@@ -1,5 +1,6 @@
 import React from "react";
-
+import AppsIcon from '@material-ui/icons/Apps';
+import ReplayIcon from '@material-ui/icons/Replay';
 
 import './Header.scss';
 
@@ -7,8 +8,10 @@ function Header() {
     return (
         <div className="header">
             <p className="logo">BIT People</p>
-            <img className="icon" src="icons/refresh-ccw.svg" alt="align_icon"></img>
-            <img className="icon" src="icons/align-justify.svg" alt="align_icon"></img>
+            <nav>
+              <ReplayIcon className="head_icon"/>
+                <AppsIcon className="head_icon" /> 
+            </nav>
         </div>
     )
 }

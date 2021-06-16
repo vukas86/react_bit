@@ -1,0 +1,58 @@
+.main {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.main .search {
+  display: flex;
+  align-items: center;
+}
+input{
+  border: none;
+display: flex;
+justify-content: space-evenly;
+margin-left: 150px;
+}
+
+.text_right {
+  text-align: right;
+  padding-left: 300px;
+}
+
+.person-card{
+  display: flex;
+  flex-direction:row;
+  font-family:BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif; 
+  
+}
+
+
+
+ul {
+  
+  border: 1px solid black;
+  list-style: none;
+ 
+
+}
+
+
+.personInfo{
+  padding-left: 100px;
+}
+
+ul li img{
+  border-radius: 50%;
+  width: 50px;
+  position: absolute;
+}
+ul li p{
+  display: flex;
+  justify-content:start;
+  margin: 15px;
+}
+
+
+
+
