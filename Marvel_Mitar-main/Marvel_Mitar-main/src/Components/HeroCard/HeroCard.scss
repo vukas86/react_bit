@@ -1,0 +1,26 @@
+.hero-card {
+  height: 150px;
+  width: 18%;
+  border: solid 1px #999;
+  background-color: skyblue;
+  margin: 1%;
+  align-items: center;
+
+  .image-container {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 20px;
+
+    img {
+      width: 100%;
+    }
+  }
+  .buttons-container {
+    display: flex;
+    justify-content: space-around;
+  }
+}
