@@ -3,12 +3,65 @@
   justify-content: space-evenly;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> fe1f80b1a21148fbeafcfb388824405eaab164f3
 .main .search {
   display: flex;
   align-items: center;
 }
+<<<<<<< HEAD
+=======
+input{
+  border: none;
+display: flex;
+justify-content: space-evenly;
+margin-left: 150px;
+}
+>>>>>>> fe1f80b1a21148fbeafcfb388824405eaab164f3
 
 .text_right {
   text-align: right;
   padding-left: 300px;
 }
+<<<<<<< HEAD
+=======
+
+.person-card{
+  display: flex;
+  flex-direction:row;
+  font-family:BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif; 
+  
+}
+
+
+
+ul {
+  
+  border: 1px solid black;
+  list-style: none;
+ 
+
+}
+
+
+.personInfo{
+  padding-left: 100px;
+}
+
+ul li img{
+  border-radius: 50%;
+  width: 50px;
+  position: absolute;
+}
+ul li p{
+  display: flex;
+  justify-content:start;
+  margin: 15px;
+}
+
+
+
+
+>>>>>>> fe1f80b1a21148fbeafcfb388824405eaab164f3

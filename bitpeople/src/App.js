@@ -7,11 +7,16 @@ function App() {
   return (
     <div>
       <Header />
+<<<<<<< HEAD
 
       <Main />
       <Footer />
 
 
+=======
+      <Main />
+      <Footer />
+>>>>>>> fe1f80b1a21148fbeafcfb388824405eaab164f3
     </div >
   );
 }
