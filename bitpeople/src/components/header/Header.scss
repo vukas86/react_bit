@@ -1,0 +1,27 @@
+.header {
+  background-color: #ee6e73;
+  color: white;
+  font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+    Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 31.5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%),
+    0 1px 5px 0 rgb(0 0 0 / 20%);
+  height: 64px;
+  line-height: 64px;
+}
+
+.logo {
+  object-fit: contain;
+  margin-left: 20px;
+}
+
+.head_icon:hover {
+  background-color: #ae4246;
+  background-size: 100%;
+  cursor: pointer;
+  text-shadow: 2px 2px;
+}

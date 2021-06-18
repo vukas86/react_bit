@@ -1,0 +1,14 @@
+.main {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main .search {
+  display: flex;
+  align-items: center;
+}
+
+.text_right {
+  text-align: right;
+  padding-left: 300px;
+}
