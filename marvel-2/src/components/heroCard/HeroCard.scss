@@ -1,8 +1,9 @@
 .hero-card {
-  height: 200px;
-  width: 18%;
+  height: 400px;
+  width: 30%;
   border: solid 1px #999;
-  background-color: skyblue;
+  background-color: white;
+ 
   margin: 1%;
   align-items: center;
   position: relative;
@@ -13,16 +14,18 @@
   }
 
   .image-container {
-    height: 100px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     padding: 10px;
+    
 
     img {
       width: 73%;
+      height: 500px;
     }
   }
   .info_btn {
