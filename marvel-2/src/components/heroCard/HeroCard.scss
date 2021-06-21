@@ -3,7 +3,7 @@
   width: 30%;
   border: solid 1px #999;
   background-color: white;
- 
+
   margin: 1%;
   align-items: center;
   position: relative;
@@ -21,18 +21,14 @@
     justify-content: center;
     overflow: hidden;
     padding: 10px;
-    
 
     img {
       width: 73%;
       height: 500px;
     }
   }
-  .info_btn {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin-right: 5px;
+
+  .buttons-container button {
     margin-bottom: 10px;
     border-top-left-radius: 30%;
     border-bottom-left-radius: 30%;
@@ -40,6 +36,14 @@
     border-bottom-right-radius: 30%;
     width: 70px;
     height: 30px;
+    cursor: pointer;
+  }
+
+  .info_btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 5px;
   }
 
   .add_btn {
@@ -47,12 +51,5 @@
     bottom: 0;
     left: 0;
     margin-left: 5px;
-    margin-bottom: 10px;
-    border-top-left-radius: 30%;
-    border-bottom-left-radius: 30%;
-    border-top-right-radius: 30%;
-    border-bottom-right-radius: 30%;
-    width: 70px;
-    height: 30px;
   }
 }

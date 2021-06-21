@@ -2,9 +2,10 @@ import "./HeroCard.scss";
 
 
 const HeroCard = (props) => {
-  console.log(props);
-  const { name, thumbnail } = props.hero;
+  const { name, thumbnail, id } = props.hero;
   const { extension, path } = thumbnail;
+ const setId= props.setId
+  
 
 
 
@@ -21,7 +22,7 @@ const HeroCard = (props) => {
         <img alt="heroimg" src={`${path}.${extension}`}></img>
       </div>
       <div className="buttons-container">
-        <button className="info_btn">Add</button>
+        <button className="info_btn" onClick = {()=>setId(id)}>Add</button>
         <button className="add_btn">Info</button>
       </div>
     </div>
@@ -31,3 +32,5 @@ const HeroCard = (props) => {
 };
 
 export default HeroCard;
+
+

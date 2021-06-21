@@ -1,20 +1,14 @@
 #Home-page {
-
-
   .header {
-   background-color: red;
-   height: 50px;
-   color: white;
-   font-size: 26px;
-  
- }
+    background-color: red;
+    height: 50px;
+    color: white;
+    font-size: 26px;
+  }
 
- .header>p{
-   margin-top: 20px;
- }
-
- 
-
+  .header > p {
+    margin-top: 20px;
+  }
 
   .content {
     padding: 10px;
@@ -24,19 +18,18 @@
     .main {
       padding: 10px;
       width: 75%;
-     
 
       .search-bar {
         height: 40px;
         display: flex;
         align-items: center;
         margin-left: 80px;
-     
 
         button {
           width: 50px;
           margin-left: 5px;
           border-radius: 35%;
+          cursor: pointer;
         }
       }
       .cards-container {
@@ -45,30 +38,62 @@
         justify-content: center;
       }
     }
-    
   }
 }
 .side {
   padding: 10px;
   width: 25%;
- color: white;
- font-weight: bold;
+  color: white;
+  font-weight: bold;
 }
 
-.side img{
-height:80px;
+.side img {
+  height: 80px;
 }
 
-.sideHero{
+.sideHero {
+  margin-top: 10px;
   display: flex;
   border: 1px solid black;
   color: black;
   background-color: white;
   height: 80px;
+  position: relative;
 }
 
-.sideHero h3{
+.sideHero span {
   font-weight: normal;
   margin: 0 auto;
   margin-top: 25px;
 }
+
+.second-pic {
+  display: none;
+}
+
+.sideHero:hover .first-pic {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+
+  /*  transform: scale(0.3) rotate(720deg);
+
+  background-image: url("https://lh3.googleusercontent.com/proxy/TbfdSxcLjtHxnTuf3EU50UWfl4NLsyROcHTJ-0J2JEHm_oFbXk-JeD0Zd7Z0J2Fq5ep9onuuDI215LO3_6BNvh0d3vV-xfAZWH6gb-YbfY3qGf6xbgbXjLRSxshw9_RGsw")
+    no-repeat; */
+}
+
+.sideHero:hover .second-pic {
+  display: inline;
+  transition-delay: 1s;
+  cursor: pointer;
+  transition: 0.5s ease;
+  transform: scale(0.6);
+}
+
+/* 
+.fall{
+	transform: translateY(8rem) rotateZ(20deg);
+	opacity: 0;
+} */
