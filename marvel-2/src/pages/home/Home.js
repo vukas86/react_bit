@@ -1,32 +1,50 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import HeroCard from '../../components/heroCard/HeroCard';
 import "./Home.scss";
 import doc from './doc.jpg'
-
-import { useEffect, useState } from 'react';
 
 
 
 
 
 const Home = (props) => {
-    const [favorites, setFavorites] = useState([]);
+  /*   const [favorites, setFavorites] = useState([]); */
     const [search, setSearch] = useState("");
+    const [filteredHero, setFilteredHero] = useState([])
     const { heroes } = props;
-   
+     
+   useEffect(()=>{
+    /* const filtered = heroes?.filter((e) => favorites.includes(e.id)); */
+   /*  setFilteredHero(filtered) */
+   },[])
 
 
-    const setId = (p) => {
-        favorites.includes(p) ? setFavorites([...favorites]) : setFavorites([...favorites, p]);
+    const setId = (id) => {
+
+
+        if(!filteredHero.some((el)=>el.id===id)){
+            const filteredheros = heroes.find((e)=>{
+                return e.id === id
+            })
+
+            setFilteredHero([...filteredHero, filteredheros])}
+
     }
 
-    const filteredHero = heroes?.filter((e) => favorites.includes(e.id));
-/* 
+    //const filteredHero = heroes?.filter((e) => favorites.includes(e.id));
+    console.log(filteredHero)
+/* console.log()
     const deleteBar = filteredHero [0] ? filteredHero.splice((e) => filteredHero.indexof(deleteBar),1): */
 
     const deleteBar = (id) => {
-        id === favorites[0] ? favorites.filter((e) => e.id !== id) : console.log("ok");
-       
+
+       /*  console.log(favorites, id) */
+       // id === favorites[0] ? favorites.filter((e) => e.id !== id) : console.log("ok");
+        /* const newFavourites = [...favorites].filter((e) => e !== id) */
+        const deleteHero = filteredHero.filter((e)=>{
+            return e.id !== id
+        })
+        setFilteredHero(deleteHero)
     }
     
 

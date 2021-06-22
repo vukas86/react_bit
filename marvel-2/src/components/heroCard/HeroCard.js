@@ -1,4 +1,5 @@
 import "./HeroCard.scss";
+import { Link } from "react-router-dom";
 
 
 const HeroCard = (props) => {
@@ -19,7 +20,7 @@ const HeroCard = (props) => {
 
       <p>{name}</p>
       <div className="image-container">
-        <img alt="heroimg" src={`${path}.${extension}`}></img>
+        <Link to="/Hero.js"><img alt="heroimg" src={`${path}.${extension}`}></img></Link>
       </div>
       <div className="buttons-container">
         <button className="info_btn" onClick = {()=>setId(id)}>Add</button>

@@ -1,5 +1,5 @@
-import React from 'react';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter as Router} from 'react-router-dom';
 import "./App.scss";
 import Home from "../pages/home/Home"
 import { Switch, Route } from 'react-router-dom';
@@ -26,6 +26,7 @@ const App = (props) => {
     // undefined
     // <JSX tag></JSX tag>
     return (
+        <Router>
         <div id="app">
             <Home heroes={heroes}></Home>
             <Hero></Hero>
@@ -35,6 +36,7 @@ const App = (props) => {
                 <Route path="/home/:id" component={Hero} />
             </Switch>
         </div>
+        </Router>
     );
 };
 
