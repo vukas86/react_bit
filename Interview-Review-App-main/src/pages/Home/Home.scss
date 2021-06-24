@@ -1,0 +1,49 @@
+// colors
+$dark-blue: #101820;
+$teal: #30d3ad;
+$white: #fefefe;
+.search-div {
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+
+  #home-search {
+    width: 50%;
+    height: 35px;
+    border-radius: 5px 0 0 5px;
+    border: 2px solid #ccc;
+    border-right: none;
+    &::placeholder {
+      padding-left: 15px;
+      color: #ccc;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  #home-search-button {
+    background-color: $teal;
+    border: none;
+    width: 50px;
+    border-radius: 0 5px 5px 0;
+    &:active {
+      background-color: #5badad;
+    }
+  }
+}
+
+#wrapper-section {
+  h1 {
+    text-align: center;
+    font-size: 2.5em;
+  }
+
+  #people-container {
+    margin-left: 10%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}

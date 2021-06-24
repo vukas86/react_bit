@@ -1,0 +1,21 @@
+.candidates-report {
+  width: 100%;
+  .report-card {
+    margin-left: 20%;
+    background-color: rgb(141, 42, 42);
+    width: 60%;
+    height: 100px;
+    display: flex;
+
+    .company,
+    .interview-date,
+    .status {
+      width: 30%;
+      text-align: center;
+    }
+
+    .modulo-link {
+      width: 10%;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+// colors
+$dark-blue: #101820;
+$teal: #30d3ad;
+$white: #fefefe;
+
+.candidate-wrapper {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.candidate-info {
+  display: flex;
+  margin-left: 25%;
+  background-color: $teal;
+  height: 400px;
+  width: 50%;
+
+  .candidate-data {
+    padding-left: 20px;
+    font-size: 20px;
+  }
+
+  span {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .data-title {
+    margin: 10px;
+  }
+}

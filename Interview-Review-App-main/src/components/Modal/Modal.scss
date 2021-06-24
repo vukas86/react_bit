@@ -1,0 +1,27 @@
+.modal-bg {
+  background-color: rgba($color: #000000, $alpha: 0.8);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .modal-content {
+    background-color: white;
+    height: auto;
+    width: 500px;
+    position: absolute;
+    padding: 10px;
+
+    .n-c {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+  }
+}
