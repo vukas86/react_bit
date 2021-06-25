@@ -1,4 +1,5 @@
-const TOKEN_KEY ="$2a$10$Ht9ATCnB3LhyEpPg.c/GOuLzkMYD2WRPZ3ZtFVP.uVCrx.nW/rwVq";
+import { useState } from "react";
+const TOKEN_KEY ="jwt"
 
 export const login = () => {
     localStorage.setItem(TOKEN_KEY, 'login');

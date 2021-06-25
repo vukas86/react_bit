@@ -3,15 +3,7 @@
 //     password: "developer",
 //   };
 
-//   fetch("http://localhost:3333/login", {
-//       method: "POST",
-//       body: JSON.stringify(data),
-//       headers: {
-//         "Content-Type": "application/json",
-//       },
-//     })
-//       .then((response) => response.json())
-//       .then((data) => console.log(data.accessToken));
+
   
 
  const getCandidates = () => {
@@ -19,4 +11,22 @@
   .then((res) => res.json())
  }
 
- export {getCandidates}
+
+
+const getToken = (email, password) => {
+    return fetch("http://localhost:3333/login", {
+        method: "POST", 
+        headers: {
+            "Content-Type": 'application/json'
+        },
+        body: JSON.stringify( {
+            email: email,
+            password: password,
+          })
+    })
+    .then(data => data.json())
+}
+
+
+
+ export {getCandidates, getToken}

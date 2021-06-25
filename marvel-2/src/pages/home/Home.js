@@ -8,21 +8,16 @@ import doc from './doc.jpg'
 
 
 const Home = (props) => {
-  /*   const [favorites, setFavorites] = useState([]); */
+
     const [search, setSearch] = useState("");
     const [filteredHero, setFilteredHero] = useState([])
     const { heroes } = props;
      
-   useEffect(()=>{
-    /* const filtered = heroes?.filter((e) => favorites.includes(e.id)); */
-   /*  setFilteredHero(filtered) */
-   },[])
+ 
 
 
     const setId = (id) => {
-
-
-        if(!filteredHero.some((el)=>el.id===id)){
+            if(!filteredHero.some((el)=>el.id===id)){
             const filteredheros = heroes.find((e)=>{
                 return e.id === id
             })
@@ -31,16 +26,12 @@ const Home = (props) => {
 
     }
 
-    //const filteredHero = heroes?.filter((e) => favorites.includes(e.id));
     console.log(filteredHero)
-/* console.log()
-    const deleteBar = filteredHero [0] ? filteredHero.splice((e) => filteredHero.indexof(deleteBar),1): */
+
 
     const deleteBar = (id) => {
 
-       /*  console.log(favorites, id) */
-       // id === favorites[0] ? favorites.filter((e) => e.id !== id) : console.log("ok");
-        /* const newFavourites = [...favorites].filter((e) => e !== id) */
+       
         const deleteHero = filteredHero.filter((e)=>{
             return e.id !== id
         })
@@ -54,6 +45,7 @@ const Home = (props) => {
 
     const searchInput = (s) => {
         setSearch(s);
+        console.log(searchInput);
     }
 
     return (
@@ -95,3 +87,38 @@ const Home = (props) => {
 };
 
 export default Home
+
+
+/* {{searchCan?}.map((e) => (
+    <Card candidates={candidates} setId={setId} cad={candidates.id} />
+  ))}
+  const searchCan = (input) =>{
+    const filtered = candidates.filter(candidate => {
+      return candidate.name.toLowerCase().includes(input.toLowerCase())
+    })
+    setInput(input);
+    setFilteredCand(filtered);
+  
+  } */
+
+  const [search, setSearch] = useState("");
+  const [filteredCand, setFilteredCand] = useState([]);
+
+
+  const setId = (id) => {
+    if(!filteredCand?.some((el) => el.id===id)){
+      const filteredCands = candidates.find((e) =>{
+        return e.id == id;
+      })
+      setFilteredCand([...filteredCand, filteredCands])}
+  }
+  console.log(filteredCand);
+
+
+ 
+
+  var searchCan = candidates.filter((e) => e.name.toLowerCase().includes(search.toLowerCase()))
+
+  const searchInput = (s) => {
+    setSearch(s);
+  }

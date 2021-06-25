@@ -2,7 +2,7 @@ import React from "react";
 import "./Candidate.scss";
 import Header from "../../components/Header/Header";
 import ReportCard from "../../components/ReportCard/ReportCard";
-import profile from "../../img/profile.jpg";
+/* import profile from "../../img/profile.jpg"; */
 
 const Candidate = ({ candidates, match }) => {
   console.log(candidates);
@@ -14,7 +14,7 @@ const Candidate = ({ candidates, match }) => {
       <Header />
       <div className="candidate-wrapper">
         <div className="candidate-info">
-          <img src={profile} alt="no-img" />
+          <img src="https://thispersondoesnotexist.com/image" alt="no-img" />
           <div className="candidate-data">
             <p className="data-title">Name</p>
             <span>Pera Zmikic</span>
